@@ -1,0 +1,44 @@
+.block {
+        background-color:red;
+    width:100px;
+    height:100px;
+    font-family: Outfit;
+    font-size:24px;
+    animation-name:square;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes square {
+    0%{background-color:rgb(255, 20, 20);
+        border-radius: 0%;
+        right:0%}
+    12.5%{background-color:rgb(255, 200, 20);
+        border-radius: 25%;
+        right:25%}
+    25%{background-color:rgb(47, 255, 20);
+        border-radius: 50%;
+        right:50%;}
+    32.5%{background-color:rgb(20, 75, 255);
+        border-radius: 75%;
+        right:75%;}
+    45%{background-color:rgb(132, 0, 255);
+        border-radius:100%;
+        right:100%}
+    57.5%{background-color:rgb(20, 75, 255);
+        border-radius: 75%;
+        right:75%}
+    70%{background-color:rgb(47, 255, 20);
+        border-radius: 50%;
+        right:50%}
+    82.5%{background-color:rgb(255, 200, 20);
+        border-radius: 25%;
+        right:25%;}
+    100%{background-color:rgb(255, 20, 20);
+        border-radius: 0%;
+        right:0%;}
+
+}
+
+

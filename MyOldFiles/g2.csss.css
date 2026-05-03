@@ -1,0 +1,28 @@
+.flexbox-container {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: hsla(24, 100%, 50%, 0);
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+}
+
+.flexbox-container > div {
+    background-color: rgb(255, 115, 0);
+    border: 1px rgb(85, 48, 0) solid;
+    padding:10px;
+    width:500px;
+    height:400px;
+}
+img {
+    width:300px;
+    height:300px;
+}
+body {
+    background-image: linear-gradient(rgb(255, 123, 0),rgb(170, 0, 0));
+    font-family: 'Henny Penny';
+    font-size: 50px;
+}
+h1 {
+    font-size: 100px;
+}

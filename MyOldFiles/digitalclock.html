@@ -1,0 +1,27 @@
+<html>
+    <head><title>Tick Tok</title></head>
+    <body>
+        <h2> The Clock </h2>
+        <p> Access secret FBI info by clicking on the button below!</p> 
+        <br> <iframe id="Arnav" style="display:none" src="https://archive.org/embed/Rick_Astley_Never_Gonna_Give_You_Up?autoplay=1?audio=100%"  width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen=""></iframe> </p>
+        <br> <button type="button" onclick="document.getElementById('Arnav').style.display='block'">Click here!</button>
+        <br> <button type="button" 
+        onclick="document.getElementById('date').innerHTML=Date()"> Click here! </button>
+        <p id="date"></p>
+
+        <div style="height: 100px; background-color: red;" onmouseover="over(this)" onmouseout="out(this)"> Hover over me for the true FBI information! </div>
+
+        <script>
+            function over(obj) {
+                obj.innerHTML = 
+"Never gonna give you up, never gonna let you down. Never gonna run around and desert you. Never gonna make you cry, never gonna say goodbye. Never gonna tell a lie and hurt you"
+            }
+
+            function out(obj) {
+                  obj.innerHTML = "Hover over me for the true FBI information!"
+            }
+
+          
+        </script>
+    </body>
+<html>

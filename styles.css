@@ -20,7 +20,7 @@ body {
     display: block;
 }
 h1 {
-    font-size:300px;
+    font-size:150px;
     text-align: center;
     font-family:'Dela Gothic One';
     text-shadow: 0px 0px 30px rgba(212, 60, 60, 0.63);
@@ -64,13 +64,14 @@ h2 {
 .art {
     background: linear-gradient(#5EDEEF, #DCE956, #E98FC0);
     width:100%;
-    height:2700px;
+    height:3700vh;
     text-align: center;
 }
 .mo {
     background: linear-gradient(#7F0012, #1B0A07);
     width:100%;
-    height:2700px;
+    height:700px;
+    
     text-align: center;
 }
 img{

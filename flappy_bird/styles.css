@@ -1,0 +1,141 @@
+body {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background-image:url(space2.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    backdrop-filter: blur(80px);
+    font-family: 'Modak';
+    color:white;
+}
+#gameContainer{
+    position:relative; 
+    width:400px;
+    height:600px;
+    background-image:url(space2.png);
+    border:3px solid #000000;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+
+#bird {
+    position: absolute;
+    width:40px;
+    height:30px;
+    background-color: #ff9f9f;
+    background-image:url(bird.gif);
+    border-radius: 50% 50% 50% 50% / 60% 60% 60% 60%;
+    border: 2px solid #000000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#bird::after {
+    content: '';
+    position:absolute;
+    width:5px;
+    height:5px;
+    background:rgb(0, 0, 0);
+    border-radius: 50px;
+    top:16px;
+    z-index:2;
+    top: 10px;
+    right: 10px;
+}
+
+#player::before{
+    left:12px;
+}
+#player::after {
+right:12px;
+}
+
+#startscreen{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    padding: 30px;
+    background:radial-gradient(circle,rgb(0, 0, 0) 0%, rgb(99, 6, 6) 100%);
+    color:#ff6c6c;
+    border-radius: 10px;
+    box-shadow:10px;
+    width: 300px;
+    height: 500px;
+    z-index:100;
+}
+
+#startscreen button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size:18px;
+    background:#7d2e2e;
+    color:rgb(0, 0, 0);
+    border: none;
+    border-radius:5px;
+    cursor:pointer;
+    z-index:100;
+}
+
+
+#startscreen button:hover {
+    background:#ff5050
+}
+
+.pipe {
+    background:radial-gradient(red,rgb(27, 4, 4));
+    position:absolute;
+    border: 2px solid black;
+    width: 100px
+}
+
+#gameOver{
+    position: absolute;
+    display: none;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    padding: 30px;
+    background:radial-gradient(circle,rgb(0, 0, 0) 0%, rgb(99, 6, 6) 100%);
+    color:#ff6c6c;
+    border-radius: 10px;
+    box-shadow:10px;
+    width: 300px;
+    height: 500px;
+
+    z-index: 100;
+}
+#gameOver button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size:18px;
+    background:#7d2e2e;
+    color:rgb(0, 0, 0);
+    border: none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#gameOver button:hover {
+    background:#ff6c6c;
+}
+#score {
+    position: absolute;
+    top:20px;
+    left:20px;
+    font-size:24px;
+    font-weight:bold;
+    color:#ffffff;
+    z-index:100;
+    background-color: black;
+    padding:5px;
+    border-radius: 40%;
+}

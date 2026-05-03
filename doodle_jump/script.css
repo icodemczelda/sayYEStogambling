@@ -1,0 +1,187 @@
+body {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #924ffe 0%, #6100fe 100%);;
+    font-family: 'Eater';
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+}
+
+#gameContainer{
+    position:relative; 
+    width:400px;
+    height:600px;
+    background-image:url(doodle.png);
+    border:3px solid #000000;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#player {
+    position: absolute;
+    width:50px;
+    height:50px;
+    background-color: #2b064e;
+    border-radius: 50% 50% 40% 40%;
+    border: 2px solid #5d2e7d;
+}
+
+#player::before,
+#player::after {
+    content: '';
+    position:absolute;
+    width:8px;
+    height:8px;
+    background:white;
+    border-radius: 50px;
+    top:16px;
+    z-index:2;
+}
+
+#player::before{
+    left:12px;
+}
+#player::after {
+right:12px;
+}
+
+.platform {
+    position: absolute;
+    width:70px;
+    height:15px;
+    background-color: #000000;
+    border-radius: 30%;
+    border: 2px solid #ffffff;
+
+}
+
+.breaking-platform {
+    position: absolute;
+    width:70px;
+    height:15px;
+    background:radial-gradient(red,orange);
+    border-radius: 30%;
+    border: 2px solid #5d2e7d;
+
+}
+
+.breaking-platform .breaking {
+    background-color: red;
+    opacity: 0.5;
+    transition:opacity 0.3s ease, transform 0.3s ease;
+    transform: scale(0.8);
+    animation: crackPlatform 0.3 forwards;
+}
+
+.breaking-platform {
+    position: absolute;
+    width:70px;
+    height:15px;
+    background-color:red;
+    border-radius: 30%;
+    border: 2px solid #ffffff;
+
+}
+
+.space-platform {
+    position: absolute;
+    width:70px;
+    height:15px;
+    background:radial-gradient(rgb(41, 0, 72),rgb(89, 15, 126));
+    border-radius: 30%;
+    border: 2px solid #ffffff;
+
+}
+
+
+#score {
+    position: absolute;
+    top:20px;
+    left:20px;
+    font-size:24px;
+    font-weight:bold;
+    color:#ffffff;
+    z-index:100;
+    background-color: black;
+    padding:5px;
+    border-radius: 40%;
+}
+#startscreen{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    padding: 30px;
+    background:radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(94, 0, 176, 1) 100%);
+    color:#5d2e7d;
+    border-radius: 10px;
+    box-shadow:10px;
+}
+
+#startscreen button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size:18px;
+    background:#5d2e7d;
+    color:white;
+    border: none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
+#startscreen button:hover {
+    background:#ab50ff
+}
+
+#gameOver{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    padding: 30px;
+    background:radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(94, 0, 176, 1) 100%);
+    color:#5d2e7d;
+    border-radius: 10px;
+    box-shadow:10px;
+    display:hidden;
+    z-index: 100;
+}
+#gameOver button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size:18px;
+    background:#5d2e7d;
+    color:white;
+    border: none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#gameOver button:hover {
+    background:#ab50ff
+}
+
+.bouncing-platform {
+    position: absolute;
+    width:70px;
+    height:15px;
+    background:linear-gradient(90deg,red,orange,yellow,green,blue,purple);
+    border-radius: 30%;
+    border: 2px solid #5d2e7d;
+
+}
+
+@keyframes crackPlatforms {
+    0% {transform:scale(1); opacity: 1;}
+    50% {transform:scale(0.95); opacity: 0.7;}
+    100% {transform:scale(1); opacity: 0;}
+}

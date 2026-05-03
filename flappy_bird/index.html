@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- // ! + TAB gives starter code -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Flappy Bird</title>
+</head>
+<body>
+    <div id="gameContainer">
+            <div id="score"> Score: 0 </div>
+            <div id="bird"></div>
+
+            <div id="startscreen">
+                    <h1 style ="font-size: 50px;">Flappy Bird! </h1>
+                    <p style="font-size: 20px;"> <ul style="font-size: 20px;">
+                        <li> Use space to jump!
+                        <li> Jump over pipes to score points!
+                        <li> Don't fall down or hurt your head on the pipe!                 
+                        </ul> </p>
+                    <button onclick="startGame()">Start!</button>
+            </div>
+            <div id="gameOver">
+                    <h1>Game Over!</h1><hr>
+                    <p>Your Score: <span id="finalScore">0</span><hr>
+                       Your High Score: <span id="highScoreDisplay">0</span><hr>
+                    </p>
+                    <button onclick="startGame()">Redeem Yourself! </button>
+                </div>
+        </div>
+</body>
+</html>

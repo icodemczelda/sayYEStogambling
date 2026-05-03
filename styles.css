@@ -1,0 +1,95 @@
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins';
+    color:white;
+}
+.navbar {
+    background-color: rgb(46, 45, 45);
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    position: sticky;
+    top:0;
+}
+
+.navbar a {
+    color:white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+h1 {
+    font-size:300px;
+    text-align: center;
+    font-family:'Dela Gothic One';
+    text-shadow: 0px 0px 30px rgba(212, 60, 60, 0.63);
+    background: linear-gradient( 90deg, #cb2228, #631b22, #cb2228); /* Applies a linear gradient background */
+  -webkit-background-clip: text; /* Clips the background to the shape of the text (vendor prefix for compatibility) */
+  background-clip: text; /* Standard property for clipping the background */
+  -webkit-text-fill-color: transparent; /* Makes the text fill transparent so the background shows through (vendor prefix for compatibility) */
+}
+
+h2 {
+    font-size:100px;
+    text-align: center;
+    font-family:'Dela Gothic One';
+}
+
+.game {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    height:900px;
+    margin:10px;
+    flex-direction: column;
+}
+.stw {
+    background: linear-gradient(#0E0725, #5C03BC, #E536AB, #F4E5F0);
+    width:100%;
+    height:2700px;
+    text-align: center;
+}
+.arc {
+    display: flex;
+    background: linear-gradient( #C11E38, #220B34);
+    width:100%;
+    height:5000px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.art {
+    background: linear-gradient(#5EDEEF, #DCE956, #E98FC0);
+    width:100%;
+    height:2700px;
+    text-align: center;
+}
+.mo {
+    background: linear-gradient(#7F0012, #1B0A07);
+    width:100%;
+    height:2700px;
+    text-align: center;
+}
+img{
+    width:600px;
+    height:300px;
+}
+.button {
+    text-align: center;
+    background: rgba(1, 255, 43, 0.685);
+    border-radius: 5px;
+    width:50%;
+    height:50px;
+    font-size:30px;
+}
+.button:hover{
+    background: rgba(22, 255, 1, 0.685);
+    text-shadow: 0px 0px 30px rgba(7, 255, 40, 0.63)
+}
+.ab {
+    color:white;
+    text-decoration: none;
+}

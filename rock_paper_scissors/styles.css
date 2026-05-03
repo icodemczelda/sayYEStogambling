@@ -1,0 +1,286 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body{
+    background-color:black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color:white;
+}
+
+h1 {
+  font-size: 4rem; /* Makes the header more prominent */
+  background: linear-gradient( 90deg, red, blue); /* Applies a linear gradient background */
+  -webkit-background-clip: text; /* Clips the background to the shape of the text (vendor prefix for compatibility) */
+  background-clip: text; /* Standard property for clipping the background */
+  -webkit-text-fill-color: transparent; /* Makes the text fill transparent so the background shows through (vendor prefix for compatibility) */
+}
+
+
+.game-container{
+    background-image: linear-gradient(90deg,rgba(255, 0, 0, 0.5),rgba(0, 0, 0, 0.502),rgba(0, 0, 255, 0.502));
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 650;
+    height: 500px;
+    border: 3px solid #ffffff;
+   /* transition here (we will talk about it later) */
+}
+
+.controls-a{
+    background-color:rgba(255, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width:125px;
+    height: 500px;
+    border: 3px solid #ffffff;
+   /* transition here (we will talk about it later) */
+   text-align: center;
+   justify-content: center;
+}
+.controls-b{
+    background-color:rgba(0, 0, 255, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width:125px;
+    height: 500px;
+    border: 3px solid #ffffff;
+   /* transition here (we will talk about it later) */
+   text-align: center;
+   justify-content: center;
+}
+
+/*style all h1 elements (maybe change their color, make them bolder, etc) */
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.score span {
+    font-size: 2em;
+    display: inline-block; 
+     /*choose background color */
+}
+
+.result p {
+    font-size: 1.8em;
+    font-weight: 600;
+    height: 40px;
+    color: #ffffff;
+}
+
+.options button{
+    background: #00000077;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 10px;
+    width:150px;
+    height:170px;
+    cursor: pointer;
+     /* transition here (we will talk about it later) */
+    border-bottom: 4px solid #ffffff;
+}
+
+.computerOptions button{
+    background: #00000077;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 10px;
+    width:150px;
+    height:170px;
+    cursor: pointer;
+     /* transition here (we will talk about it later) */
+    border-bottom: 4px solid #ffffff;
+}
+
+.options button:hover {
+  background-image:linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.457));
+  transform:translateY(-5px);
+}
+.options button:active {
+  transform:translateY(-2px);
+}
+.options button:disabled {
+  background-color:rgba(0, 0, 0, 0.747);
+  border-color:rgb(0, 0, 0);
+  cursor:not-allowed;
+  transform: translateY(0);
+}
+
+.match {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.hand img {
+    width: 120px;
+    height: 120px;
+    filter: invert()
+}
+
+#computer-hand img {
+    transform: scaleX(1); 
+}
+#player-hand img {
+    transform: scaleX(1); 
+}
+/* Shake Animation */
+.shake {
+    animation: shake-hand 0.4s 4 alternate;
+}
+
+
+@keyframes shake-hand {
+    from {
+        transform: rotate(15deg);
+    }
+    to {
+        transform: rotate(-15deg);
+    }
+}
+
+.player-wins-transform {
+  transform: scale(1.03) rotate(1deg);
+  box-shadow: 0 0 40px rgb(255, 98, 98), 0 0 20px rgb(255, 98, 98);
+}
+
+.computer-wins-transform {
+  transform: scale(1.03) rotate(1deg);
+  box-shadow: 0 0 40px rgb(98, 101, 255), 0 0 20px rgb(98, 101, 255);
+}
+
+.tie-wins-transform {
+  transform: scale(1.03) rotate(1deg);
+  box-shadow: 0 0 40px rgb(229, 98, 255), 0 0 20px rgb(153, 98, 255);
+}
+.score-update {
+  transform: scale(1.6) rotate(10deg);
+  color: rgb(55, 255, 55);
+}

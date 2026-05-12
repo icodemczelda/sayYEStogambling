@@ -79,17 +79,22 @@ function numberToLetter(digit) {
 
 function cipher(num) {
     var stringNum = num.toString();
-     if(num < 0) {
-        stringNum[0] = "";
-    }
+
     var digitCount = stringNum.length;
     var result = "";
 
-    for(i = 0; i < digitCount; i++) {
+    if(num < 0) {
+        for(i = 1; i < digitCount; i++) {
         console.log(Number(stringNum[i]) + 1);
         result += numberToLetter(Number(stringNum[i]));
+        }
+    } else {
+        for(i = 0; i < digitCount; i++) {
+        console.log(Number(stringNum[i]) + 1);
+        result += numberToLetter(Number(stringNum[i]));
+        }
     }
-
+    
     console.log(result);
     if(num < 0) {
         return "!" + result;

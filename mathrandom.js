@@ -79,6 +79,9 @@ function numberToLetter(digit) {
 
 function cipher(num) {
     var stringNum = num.toString();
+     if(num < 0) {
+        stringNum[0] = "";
+    }
     var digitCount = stringNum.length;
     var result = "";
 
@@ -88,5 +91,10 @@ function cipher(num) {
     }
 
     console.log(result);
-    return result;
+    if(num < 0) {
+        return "!" + result;
+    }
+    else {
+        return result;
+    }
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM</title>
+    <script src="mathrandom.js" defer></script>
+</head>
+<body>
+<h1>Choose the Chip!</h1>
+<p>Choose a chip to bet on! The more you bet, the higher the stakes!</p>
+ 
+<table>
+    <tr>
+        <td><button id="1" onclick="chip_money(1)">Chip 1</button></td>
+        <td><button id="2" onclick="chip_money(2)">Chip 2</button></td>
+        <td><button id="3" onclick="chip_money(3)">Chip 3</button></td>
+    </tr>
+    <tr>
+        <td><h2>$<h2 id="res1">???</h2></h2></td>
+        <td><h2>$<h2 id="res2">???</h2></h2></td>
+        <td><h2>$<h2 id="res3">???</h2></h2></td>
+    </tr>
+</table>
+<p>Bet any value on a specific chips!</p>
+
+<div class="form">
+<label for="guessField">Enter a guess: </label>
+<input type="text" id="guessField" class="guessField">
+<input type="submit" value="Click twice to submit guess" class="guessSubmit" id="submitguess" onclick="betResult()">
+
+<td><h2>You Earn: $<h2 id="resf">>???</h2></h2></td>
+<td><h2>Code to Redeem Cash: $<h2 id="encr">>???</h2></h2></td>
+</div>
+</body>
+</html>
